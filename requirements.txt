@@ -1,0 +1,8 @@
+psycopg
+psycopg-binary
+psycopg-pool
+python-dateutil
+pytrading212
+dataclasses_json
+tenacity
+pyTelegramBotAPI

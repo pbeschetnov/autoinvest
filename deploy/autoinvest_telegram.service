@@ -1,0 +1,13 @@
+[Unit]
+After=network.target postgresql.service
+StartLimitIntervalSec=0
+
+[Service]
+User=${USER}
+Restart=always
+RestartSec=1
+WorkingDirectory=${HOME}/autoinvest
+ExecStart=${HOME}/.pyenv/shims/python telegram.py
+
+[Install]
+WantedBy=multi-user.target
